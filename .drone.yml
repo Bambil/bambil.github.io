@@ -1,0 +1,7 @@
+pipeline:
+
+  build:
+    image: banian/node
+    commands:
+        - NODE_ENV=production yarn
+        - NODE_ENV=production yarn build
