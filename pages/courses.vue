@@ -5,7 +5,7 @@
         <v-card-media
           class="white--text"
           height="200px"
-          src="/static/doc-images/cards/docks.jpg"
+          src="/img/python.png"
           >
           <v-container fill-height fluid>
             <v-layout fill-height>
