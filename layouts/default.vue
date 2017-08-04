@@ -25,6 +25,8 @@
     <v-toolbar fixed>
       <v-toolbar-side-icon @click.native.stop="drawer = !drawer">
       </v-toolbar-side-icon>
+      <v-toolbar-title class="white--text">Bambil</v-toolbar-title>
+
     </v-toolbar>
     <main>
     <v-container fluid>
