@@ -5,28 +5,14 @@
       :clipped="clipped"
       v-model="drawer">
       <v-list>
-        <v-list-tile to="/">
+        <v-list-tile v-for='navItem in navItems'
+          :key='navItem.id'
+          :to="navItem.link">
           <v-list-tile-action>
-            <v-icon>home</v-icon>
+            <v-icon>{{ navItem.icon }}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Home</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile to="/academy">
-          <v-list-tile-action>
-            <v-icon>account_balance</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>Academy</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile href="https://blog.bambil.ml/">
-          <v-list-tile-action>
-            <v-icon>format_bold</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>Blog</v-list-tile-title>
+            <v-list-tile-title>{{ navItem.title }}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -52,7 +38,27 @@ export default {
   data() {
     return {
       drawer: false,
-      clipped: true
+      clipped: true,
+      navItems: [
+        {
+          id: 1,
+          title: 'Home',
+          icon: 'home',
+          link: '/'
+        },
+        {
+          id: 2,
+          title: 'Academy',
+          icon: 'account_balance',
+          link: '/academy'
+        },
+        {
+          id: 3,
+          title: 'Blog',
+          icon: 'format_bold',
+          link: 'https://blog.bambil.ml/'
+        }
+      ]
     }
   }
 }
