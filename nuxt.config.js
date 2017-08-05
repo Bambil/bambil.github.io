@@ -27,5 +27,8 @@ module.exports = {
   plugins: ['~plugins/vuetify.js'],
   css: [
     { src: '~assets/style/app.styl', lang: 'styl' }
+  ],
+  modules: [
+    ['@nuxtjs/google-analytics', { ua: 'UA-101201565-3' }],
   ]
 }

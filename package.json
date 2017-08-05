@@ -11,6 +11,7 @@
     "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
+    "@nuxtjs/google-analytics": "^1.0.0",
     "nuxt": "0.10.7",
     "vue-server-renderer": "latest",
     "vuetify": "^0.14.8"
