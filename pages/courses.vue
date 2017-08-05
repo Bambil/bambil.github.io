@@ -1,7 +1,7 @@
 <template>
   <v-layout row warp>
-    <v-flex xs12 sm6 offset-sm3>
-      <v-card class="mb-2">
+    <v-flex xs6 sm3 offset-sm3>
+      <v-card>
         <v-card-media
           class="white--text"
           height="200px"
@@ -27,6 +27,8 @@
           <v-btn flat class="orange--text" href="https://python.bambil.ml/">Slides</v-btn>
         </v-card-actions>
       </v-card>
+    </v-flex>
+    <v-flex xs6 sm3>
       <v-card>
         <v-card-media
           class="white--text"
