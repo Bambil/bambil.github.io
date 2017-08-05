@@ -31,7 +31,7 @@
     <v-flex xs6 sm3>
       <v-card>
         <v-card-media
-          class="white--text"
+          class="black--text"
           height="200px"
           src="/img/iot.png"
           >
@@ -47,7 +47,7 @@
           <div>
             <span class="grey--text">Parham Alvani &lt;parham.alvani@gmail.com&gt;</span><br>
             <span>Introduction to IoT Platforms</span><br>
-            <span>SSC Advanced Python Summer Course - Summer 2017</span>
+            <span>SSC IoT Summer Course - Summer 2017</span>
           </div>
         </v-card-title>
         <v-card-actions>
@@ -56,10 +56,10 @@
         </v-card-actions>
       </v-card>
     </v-flex>
-    <v-flex xs6 sm4>
+    <v-flex xs6 sm3>
       <v-card>
         <v-card-media
-          class="white--text"
+          class="black--text"
           height="200px"
           src="/img/node.png"
           >
