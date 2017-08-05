@@ -33,7 +33,7 @@
       <nuxt />
     </v-container>
     </main>
-    <v-footer fixed>
+    <v-footer>
       <span>&copy; Bambil 2017</span>
     </v-footer>
   </v-app>
