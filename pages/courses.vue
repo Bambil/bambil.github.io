@@ -3,13 +3,7 @@
     <v-flex xs6 sm3
       v-for='course in courses'
       :key='course.id'
-      :image='course.image'
-      :headline='course.headline'
-      :title='course.title'
-      :at='course.at'
-      :instructor='course.instructor'
-      :email='course.email'
-      :sourceCode='course.sourceCode'>
+      >
       <v-card>
         <v-card-media
           class="white--text"
@@ -26,7 +20,7 @@
         </v-card-media>
         <v-card-title>
           <div>
-            <span class="grey--text">{{ course.instructor }} &lt;{{ course.email }}&gt;</span><br>
+            <span class="grey--text">{{ instructors[course.instructor].name }} &lt;{{ instructors[course.instructor].email }}&gt;</span><br>
             <span>{{ course.title }}</span><br>
             <span>{{ course.at }}</span>
           </div>
@@ -39,16 +33,25 @@
     </v-flex>
   </v-layout>
 </template>
+
 <script>
 export default {
   data() {
     return {
+      instructors: [
+        {
+          name: 'Parham Alvani',
+          email: 'parham.alvani@gmail.com'
+        }, {
+          name: 'Iman Tabrizian',
+          email: 'tabrizian@outlook.com'
+        }
+      ],
       courses: [
         {
           id: 1,
+          instructor: 0,
           headline: 'Python 101',
-          instructor: 'Parham Alvani',
-          email: 'parham.alvani@gmail.com',
           title: 'Introduction to Advanced Python',
           at: 'SSC Advanced Python Summer Course - Summer 2017',
           slides: 'https://python.bambil.ml/',
@@ -57,9 +60,8 @@ export default {
         },
         {
           id: 2,
+          instructor: 0,
           headline: 'IoT 101',
-          instructor: 'Parham Alvani',
-          email: 'parham.alvani@gmail.com',
           title: 'Introduction to IoT Platforms',
           at: 'SSC Summer IoT Course - Summer 2017',
           slides: 'https://iot.bambil.ml/',
@@ -68,9 +70,8 @@ export default {
         },
         {
           id: 3,
+          instructor: 1,
           headline: 'Node 101',
-          instructor: 'Iman Tabrizian',
-          email: 'tabrizian@outlook.com',
           title: 'Node.JS + Hapi',
           at: 'SSC Summer NodeJS Course - Summer 2017',
           slides: 'https://docs.google.com/presentation/d/15kh8KrlYm9YO5ySmY29qwrRBh0Kze7MM3aD1T5v5CMM/edit?usp=sharing',
