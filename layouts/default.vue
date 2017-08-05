@@ -13,12 +13,12 @@
             <v-list-tile-title>Home</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile to="/courses">
+        <v-list-tile to="/academy">
           <v-list-tile-action>
-            <v-icon>class</v-icon>
+            <v-icon>account_balance</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Courses</v-list-tile-title>
+            <v-list-tile-title>Academy</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile href="https://blog.bambil.ml/">
