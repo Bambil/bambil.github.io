@@ -7,7 +7,8 @@
       <v-list>
         <v-list-tile v-for='navItem in navItems'
           :key='navItem.id'
-          :to="navItem.link">
+          :to='navItem.link'
+          :href='navItem.href'>
           <v-list-tile-action>
             <v-icon>{{ navItem.icon }}</v-icon>
           </v-list-tile-action>
@@ -56,7 +57,7 @@ export default {
           id: 3,
           title: 'Blog',
           icon: 'format_bold',
-          link: 'https://blog.bambil.ml/'
+          href: 'https://blog.bambil.ml/'
         }
       ]
     }
