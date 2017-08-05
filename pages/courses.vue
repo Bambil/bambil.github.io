@@ -6,7 +6,7 @@
       >
       <v-card>
         <v-card-media
-          class="white--text"
+          :class="course.color + '--text'"
           height="200px"
           :src="course.image"
           >
@@ -51,6 +51,7 @@ export default {
         {
           id: 1,
           instructor: 0,
+          color: 'white',
           headline: 'Python 101',
           title: 'Introduction to Advanced Python',
           at: 'SSC Advanced Python Summer Course - Summer 2017',
@@ -61,6 +62,7 @@ export default {
         {
           id: 2,
           instructor: 0,
+          color: 'grey',
           headline: 'IoT 101',
           title: 'Introduction to IoT Platforms',
           at: 'SSC Summer IoT Course - Summer 2017',
@@ -71,6 +73,7 @@ export default {
         {
           id: 3,
           instructor: 1,
+          color: 'grey',
           headline: 'Node 101',
           title: 'Node.JS + Hapi',
           at: 'SSC Summer NodeJS Course - Summer 2017',
