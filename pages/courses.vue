@@ -77,6 +77,16 @@ export default {
           slides: 'https://docs.google.com/presentation/d/15kh8KrlYm9YO5ySmY29qwrRBh0Kze7MM3aD1T5v5CMM/edit?usp=sharing',
           sourceCode: 'https://github.com/AUT-CEIT/node-course',
           image: '/img/node.png'
+        },
+        {
+          id: 4,
+          instructor: 1,
+          headline: 'Virtualiztion 101',
+          title: 'Virtualiztion Workshop',
+          at: '8th LinuxFest Virtuliztion Workshop - Spring 2017',
+          slides: 'https://docs.google.com/presentation/d/1cbwBxhXSKFfL_9xNE9Aa2Qr_ILjmx1LSVeO04HnBBmc/edit?usp=sharing',
+          sourceCode: 'https://github.com/LinuxFest/Docker101',
+          image: '/img/docker.png'
         }
       ]
     }
