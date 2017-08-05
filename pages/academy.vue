@@ -84,6 +84,7 @@ export default {
         {
           id: 4,
           instructor: 1,
+          color: 'white',
           headline: 'Virtualiztion 101',
           title: 'Virtualiztion Workshop',
           at: '8th LinuxFest Virtuliztion Workshop - Spring 2017',
