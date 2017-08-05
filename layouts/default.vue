@@ -2,6 +2,7 @@
   <v-app dark toolbar footer>
     <v-navigation-drawer
       persistent
+      :clipped="clipped"
       v-model="drawer">
       <v-list>
         <v-list-tile to="/">
@@ -50,7 +51,8 @@
 export default {
   data() {
     return {
-      drawer: false
+      drawer: false,
+      clipped: true
     }
   }
 }
