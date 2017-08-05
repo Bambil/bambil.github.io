@@ -22,7 +22,7 @@
         </v-list-tile>
         <v-list-tile href="https://blog.bambil.ml/">
           <v-list-tile-action>
-            <v-icon>fotmat_bold</v-icon>
+            <v-icon>format_bold</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>Blog</v-list-tile-title>
