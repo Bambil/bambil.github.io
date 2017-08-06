@@ -1,5 +1,65 @@
 <template>
-  <v-carousel>
-    <v-carousel-item src="https://www.bing.com/az/hprichbg/rb/BodieLighthouse_EN-US10541981640_1366x768.jpg"></v-carousel-item>
-  </v-carousel>
+
+  <div>
+    <h1 class="grey--text">Members</h1>
+    <v-layout row warp>
+      <v-flex xs6 sm3
+        v-for='member in members'
+        :key='member.id'
+        >
+        <v-card>
+          <v-card-media
+            height="300px"
+            :src="member.image"
+            >
+            <v-container fill-height fluid>
+              <v-layout fill-height>
+                <v-flex xs12 align-end flexbox>
+                  <span class="headline">{{ member.name }}</span>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-card-media>
+          <v-card-title>
+            <div>
+              <span class="grey--text">Email: &lt;{{ member.email }}&gt;</span><br>
+              <span>{{ member.role }}</span>
+            </div>
+          </v-card-title>
+          <v-card-actions>
+            <v-btn flat class="orange--text" :href="member.github">Github</v-btn>
+            <v-btn flat class="orange--text" :href="member.twitter">Twitter</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      members: [
+        {
+          id: 1,
+          name: 'Iman Tabrizian',
+          email: 'tabrizian@outlook.com',
+          github: '@Tabrizian',
+          twitter: '_iman96_',
+          image: 'https://avatars1.githubusercontent.com/u/10105175?v=4&s=460',
+          role: 'Developer'
+        },
+        {
+          id: 2,
+          name: 'Parham Alvani',
+          email: 'parham.alvani@gmail.com',
+          github: '@1995parham',
+          twitter: '@1995parham',
+          image: 'https://avatars3.githubusercontent.com/u/8181240?v=4&s=400',
+          role: 'Developer'
+        }
+      ],
+    }
+  }
+}
+</script>
