@@ -2,6 +2,7 @@
   <v-app dark toolbar footer>
     <v-navigation-drawer
       persistent
+      temporary
       :clipped="clipped"
       v-model="drawer">
       <v-list>
