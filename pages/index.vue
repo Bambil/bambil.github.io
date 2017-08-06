@@ -1,7 +1,31 @@
 <template>
 
   <div>
-    <h1 class="grey--text">Members</h1>
+    <v-card>
+      <v-card-media
+        height="500px"
+        src="https://www.bing.com/az/hprichbg/rb/HulunbuirPrairie_EN-US10970548280_1366x768.jpg"
+        >
+        <v-container fill-height fluid>
+          <v-layout fill-height>
+            <v-flex xs12 align-end flexbox>
+              <span class="headline">Bambil:  IoT Future</span>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-card-media>
+      <v-card-title>
+        <div>
+          <h5 class="white--text">IoT Solutions for Orginizations and Industry</h5>
+          <blockquote>
+            We are proud to announce that we have expertise in this field
+            for about 3 years.
+          </blockquote>
+
+        </div>
+      </v-card-title>
+    </v-card>
+    <h2 class="grey--text">Members</h2>
     <v-layout row warp>
       <v-flex xs6 sm3
         v-for='member in members'
