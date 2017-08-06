@@ -80,7 +80,7 @@ export default {
           github: '@1995parham',
           twitter: '@1995parham',
           image: 'https://avatars3.githubusercontent.com/u/8181240?v=4&s=400',
-          role: 'Developer'
+          role: 'Co-Founder and CTO'
         }
       ],
     }
