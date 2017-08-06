@@ -2,7 +2,7 @@
   <v-container fluid>
 
     <v-layout row wrap>
-      <v-flex xs6 sm3
+      <v-flex xs12 sm3
         v-for='course in courses'
         :key='course.id'
         >
