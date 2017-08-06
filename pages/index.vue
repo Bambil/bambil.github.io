@@ -71,7 +71,7 @@ export default {
           github: '@Tabrizian',
           twitter: '_iman96_',
           image: 'https://avatars1.githubusercontent.com/u/10105175?v=4&s=460',
-          role: 'Developer'
+          role: 'Founder'
         },
         {
           id: 2,
