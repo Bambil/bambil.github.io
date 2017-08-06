@@ -1,37 +1,40 @@
 <template>
-  <v-layout row warp>
-    <v-flex xs6 sm3
-      v-for='course in courses'
-      :key='course.id'
-      >
-      <v-card>
-        <v-card-media
-          :class="course.color + '--text'"
-          height="200px"
-          :src="course.image"
-          >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <span class="headline">{{ course.headline }}</span>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card-media>
-        <v-card-title>
-          <div>
-            <span class="grey--text">{{ instructors[course.instructor].name }} &lt;{{ instructors[course.instructor].email }}&gt;</span><br>
-            <span>{{ course.title }}</span><br>
-            <span>{{ course.at }}</span>
-          </div>
-        </v-card-title>
-        <v-card-actions>
-          <v-btn flat class="orange--text" :href="course.sourceCode">Github</v-btn>
-          <v-btn flat class="orange--text" :href="course.slides">Slides</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <v-container fluid>
+
+    <v-layout row wrap>
+      <v-flex xs6 sm3
+        v-for='course in courses'
+        :key='course.id'
+        >
+        <v-card>
+          <v-card-media
+            :class="course.color + '--text'"
+            height="200px"
+            :src="course.image"
+            >
+            <v-container fill-height fluid>
+              <v-layout fill-height>
+                <v-flex xs12 align-end flexbox>
+                  <span class="headline">{{ course.headline }}</span>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-card-media>
+          <v-card-title>
+            <div>
+              <span class="grey--text">{{ instructors[course.instructor].name }} &lt;{{ instructors[course.instructor].email }}&gt;</span><br>
+              <span>{{ course.title }}</span><br>
+              <span>{{ course.at }}</span>
+            </div>
+          </v-card-title>
+          <v-card-actions>
+            <v-btn flat class="orange--text" :href="course.sourceCode">Github</v-btn>
+            <v-btn flat class="orange--text" :href="course.slides">Slides</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
