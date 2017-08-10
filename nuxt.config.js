@@ -10,7 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Bambil' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png?v=2' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png?v=3' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
