@@ -4,15 +4,9 @@
     <v-card>
       <v-card-media
         height="500px"
-        src="https://www.bing.com/az/hprichbg/rb/HulunbuirPrairie_EN-US10970548280_1366x768.jpg"
+        src="logo.png"
+        dark
         >
-        <v-container fill-height fluid>
-          <v-layout fill-height>
-            <v-flex xs12 align-end flexbox>
-              <span class="headline">Bambil:  IoT Future</span>
-            </v-flex>
-          </v-layout>
-        </v-container>
       </v-card-media>
       <v-card-title>
         <div>
