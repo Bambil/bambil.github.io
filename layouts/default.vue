@@ -21,7 +21,7 @@
     </v-navigation-drawer>
     <v-toolbar fixed>
       <v-toolbar-title class="white--text">
-        <v-toolbar-side-icon @click.native.stop="drawer = !drawer">
+        <v-toolbar-side-icon @click.stop="drawer = !drawer">
         </v-toolbar-side-icon>
         Bambil
       </v-toolbar-title>
