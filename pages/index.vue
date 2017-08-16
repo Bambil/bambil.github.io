@@ -21,7 +21,7 @@
       </v-card-title>
     </v-card>
     <h2 class="grey--text">Members</h2>
-    <v-layout row warp>
+    <v-layout row wrap>
       <v-flex xs12 sm3
         v-for='member in members'
         :key='member.id'
