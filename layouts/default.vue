@@ -20,9 +20,11 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar fixed>
-      <v-toolbar-side-icon @click.native.stop="drawer = !drawer">
-      </v-toolbar-side-icon>
-      <v-toolbar-title class="white--text">Bambil</v-toolbar-title>
+      <v-toolbar-title class="white--text">
+        <v-toolbar-side-icon @click.native.stop="drawer = !drawer">
+        </v-toolbar-side-icon>
+        Bambil
+      </v-toolbar-title>
     </v-toolbar>
     <main>
     <v-container fluid>
