@@ -4,6 +4,7 @@
     <v-card>
       <v-card-media
         src="logo.png"
+        height="300px"
         contain
         class="grey lighten-2"
       >
