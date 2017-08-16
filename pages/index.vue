@@ -5,6 +5,7 @@
       <v-card-media
         height="500px"
         src="logo.png"
+        conatain="true"
         class="grey lighten-2"
       >
       </v-card-media>
