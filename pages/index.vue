@@ -5,8 +5,8 @@
       <v-card-media
         height="500px"
         src="logo.png"
-        dark
-        >
+        class="grey lighten-2"
+      >
       </v-card-media>
       <v-card-title>
         <div>
