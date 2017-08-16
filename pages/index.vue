@@ -3,7 +3,6 @@
   <div>
     <v-card>
       <v-card-media
-        height="500px"
         src="logo.png"
         contain
         class="grey lighten-2"
