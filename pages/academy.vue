@@ -58,7 +58,7 @@ export default {
           headline: 'Python 201',
           title: 'Introduction to Advanced Python',
           at: 'SSC Advanced Python Summer Course - Summer 2017',
-          slides: 'https://github.bambil.io/Python201',
+          slides: 'https://bambil.github.io/Python201',
           sourceCode: 'https://github.com/bambil/Python201',
           image: '/img/python.png'
         },
