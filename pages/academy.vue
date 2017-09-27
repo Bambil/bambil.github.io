@@ -55,10 +55,10 @@ export default {
           id: 1,
           instructor: 0,
           color: 'white',
-          headline: 'Python 101',
+          headline: 'Python 201',
           title: 'Introduction to Advanced Python',
           at: 'SSC Advanced Python Summer Course - Summer 2017',
-          slides: 'https://python.bambil.ml/',
+          slides: 'https://github.bambil.io/Python201',
           sourceCode: 'https://github.com/bambil/Python201',
           image: '/img/python.png'
         },
@@ -69,7 +69,7 @@ export default {
           headline: 'IoT 101',
           title: 'Introduction to IoT Platforms',
           at: 'SSC Summer IoT Course - Summer 2017',
-          slides: 'https://iot.bambil.ml/',
+          slides: 'https://bambil.github.io/IoT101',
           sourceCode: 'https://github.com/bambil/IoT101',
           image: '/img/iot.png'
         },
