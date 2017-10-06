@@ -46,8 +46,8 @@
             </div>
           </v-card-title>
           <v-card-actions>
-            <v-btn flat class="orange--text" :href="member.github">Github</v-btn>
-            <v-btn flat class="orange--text" :href="member.twitter">Twitter</v-btn>
+            <v-btn flat class="orange--text" :href="'https://github.com/' + member.github">Github</v-btn>
+            <v-btn flat class="orange--text" :href="'https://twitter.com/' + member.twitter">Twitter</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -63,7 +63,7 @@ export default {
           id: 1,
           name: 'Iman Tabrizian',
           email: 'tabrizian@outlook.com',
-          github: '@Tabrizian',
+          github: 'Tabrizian',
           twitter: '_iman96_',
           image: 'https://github.com/Tabrizian.png',
           role: 'Founder'
@@ -72,8 +72,8 @@ export default {
           id: 2,
           name: 'Parham Alvani',
           email: 'parham.alvani@gmail.com',
-          github: '@1995parham',
-          twitter: '@1995parham',
+          github: '1995parham',
+          twitter: '',
           image: 'https://github.com/1995parham.png',
           role: 'Co-Founder and CTO'
         }
