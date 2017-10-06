@@ -4,7 +4,7 @@
   "description": "Bambil!",
   "author": "Iman Tabrizian <Tabrizian@outlook.com>",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "HOST=0.0.0.0 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "deploy": "push-dir --dir=dist --branch=master --cleanup",
